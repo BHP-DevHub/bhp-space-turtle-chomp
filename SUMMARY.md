@@ -5,7 +5,7 @@
   * [Part 1 – Getting Started](space_turtle_chomp/part_1_getting_started.md)
   * [Part 2 – Keyboard Bindings](space_turtle_chomp/part_2__keyboard_bindings_and_turning_the_turtle.md)
   * [Part 3 – Adding a border](space_turtle_chomp/part_3__adding_a_boarder_and_setting_a_boundary.md)
-  * [Part 4 – Create an objective \(chomping space cabbage\) and collision checking ](space_turtle_chomp/part_4__create_an_objective_chomping_space_cabbage.md)
+  * [Part 4 – Create an objective](space_turtle_chomp/part_4__create_an_objective_chomping_space_cabbage.md)
   * [Part 5 – Collision checking using a function ](space_turtle_chomp/part_5__collision_checking_using_a_function.md)
   * [Part 6 – Moving and setting boundary checking for the food \(cabbage\) ](space_turtle_chomp/part_6__moving_and_setting_boundary_checking_for_t.md)
   * [Part 7 – Making multiple food items \(Space Cabbages\) to chase ](space_turtle_chomp/part_7__making_multiple_food_items_space_cabbages_.md)

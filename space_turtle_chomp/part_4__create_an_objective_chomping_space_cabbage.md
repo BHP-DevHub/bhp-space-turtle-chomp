@@ -2,29 +2,29 @@
 
 OK so now you have your turtle that we can move around the screen and if we bump into any of the boarders your turtle will bounce off at 180<sup>0</sup>. Now we need an objective for the game, something for your turtle to do and to score point doing. For this game you are going to have your turtle chase and chomps space cabbages because we are making them green but you could choose a different colour and shape such as space cheese (e.g. yellow triangle)
 
-1.  Create the goal / objective
+Step 1.  Create the goal / objective
+```python
+player.penup()
+Player.speed(0)
 
-| 27 | player.penup() |
-| --- | --- |
-| 28 | Player.speed(0) |
-| 29 |  |
-| 30 | #create food |
-| 31 | food = turtle.Turtle() |
-| 32 | food.color(&quot;lightgreen&quot;) |
-| 33 | food.shape(&quot;circle&quot;) |
-| 34 | food.penup() |
-| 35 | food.speed(0) |
-| 36 |  |
+#create food
+food = turtle.Turtle()
+food.color("lightgreen")
+food.shape("circle")
+food.penup()
+food.speed(0)
+```
+Step 2.  Save the game as kbgame4 and then run the module.
+_*note: you should see the light green circle on the screen and can move around it_
 
-1.  Save the game as kbgame4 and then run the module.*note: you should see the light green circle on the screen and can move around it
-2.  Now we are going to set the cabbage in a position by typing
+Step 3.  Now we are going to set the cabbage in a position by typing:
+```python
+food.speed(0)
+food.setposition(-100, 100) 
+```
 
-| 35 | food.speed(0) |
-| --- | --- |
-| 36 | food.setposition(-100, 100) |
-
-1.  Save and run the module
-2.  Now we need to add collision detection as this will allow us to calculate when your turtle collides with (eats) your space cabbage. We do this by using a bit of math to work out where the turtle and cabbage is and if they are touching and the distance between them is small. For the math nerds here we will use one of Pythagoras’s theories. To do that we need to import the math libraries at the top of our application.
+Step 4.  Save and run the module
+Step 5.  Now we need to add collision detection as this will allow us to calculate when your turtle collides with (eats) your space cabbage. We do this by using a bit of math to work out where the turtle and cabbage is and if they are touching and the distance between them is small. For the math nerds here we will use one of Pythagoras’s theories. To do that we need to import the math libraries at the top of our application.
 
 | 1 | #Turtle Graphics Game – Space Turtle Chomp |
 | --- | --- |

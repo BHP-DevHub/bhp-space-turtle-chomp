@@ -55,4 +55,4 @@ _*note: 0 is the fasted animation speed._
 
 1.  Save and Run your module again try moving the turtle icon now and then close the Turtle and Python Shell windows
 
-Congratulations Module 2 Completed
+**Congratulations Module 2 Completed**
