@@ -48,5 +48,7 @@ _*note we have set the boundary at 290 and -290 so that the turtle bounces when 
 
 Step 5. Save and then Run your module
 
+Your code should now look like this: [kbgame3.py](/src/kbgame3.py)
+
 **Congratulations Module 3 Completed**
 

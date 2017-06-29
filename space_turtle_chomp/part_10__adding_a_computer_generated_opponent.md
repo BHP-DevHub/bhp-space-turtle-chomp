@@ -2,100 +2,95 @@
 
 In general games are more fun if you get to compete against an opponent, for Space Turtle Chomp this is very easy to do as we have already written all the code we just need to create an opponent section and cut and paste then modify our existing code.
 
-1.  First we need to create a new turtle object as the opponent, move just under #Create player turtle and add
+Step 1.  First we need to create a new turtle object as the opponent, move just under #Create player turtle and add:
+```python
+# Create player turtle
+player = turtle.Turtle()
+player.color('darkorange')
+player.shape('turtle')
+player.penup()
+Player.speed(0)
 
-| 6 | #Create player turtle |
-| --- | --- |
-| 7 | player = turtle.Turtle() |
-| 8 | player.color(&quot;darkorange&quot;) |
-| 9 | player.shape(&quot;turtle&quot;) |
-| 10 | player.penup() |
-| 11 | Player.speed(0) |
-|  |  |
-|  | #Create compition turtle |
-|  | comp = turtle.Turtle() |
-|  | comp.color(&quot;red&quot;) |
-|  | comp.shape(&quot;turtle&quot;) |
-|  | comp.penup() |
-|  | comp.setposition(random.randint(-290, 290), random.randint(-290, 290)) |
+# Create opponent turtle
+comp = turtle.Turtle()
+comp.color('red')
+comp.shape('turtle')
+comp.penup()
+comp.setposition(random.randint(-290, 290), random.randint(-290, 290))
+```
 
-1.  Save your game as kbgame10 and Run your module
+Step 2.  Save your game as kbgame10 and run your module
 
-You now have a Red opponent space Turtle now you can make it move around the screen and add the boundary checking so it doesn’t run away. Move to your While Loop section and add the following
+You now have a Red opponent space Turtle now you can make it move around the screen and add the boundary checking so it doesn’t run away. Move to your While Loop section and add the following:
+```python
+while True:
+    player.forward(speed)
+    comp.forward(12)
 
-| 98 | While True: |
-| --- | --- |
-| 99 | Player.forward(speed) |
-| 100 | Comp.forward(12) |
-| 101 |  |
-| 102 | #Boundary Player Checking x coordinate |
-| 103 | if player.xcor() &gt; 290 or player.xcor() &lt;-290: |
-| 104 | player.right(180) |
-| 105 | os.system(&quot;afplay bounce.mp3&amp;&quot;) |
-| 106 |  |
-| 107 | #Boundary Player Checking y coordinate |
-| 108 | if player.ycor() &gt; 290 or player.ycor() &lt;-290: |
-| 109 | player.right(180) |
-| 110 | os.system(&quot;afplay bounce.mp3&amp;&quot;) |
-| 111 |  |
-| 112 | #Boundary Comp Checking x coordinate |
-| 113 | if comp.xcor() &gt; 290 or comp.xcor() &lt;-290: |
-| 114 | comp.right(180) |
-| 115 | os.system(&quot;afplay bounce.mp3&amp;&quot;) |
-| 116 |  |
-| 117 | #Boundary Comp Checking y coordinate |
-| 118 | if comp.ycor() &gt; 290 or comp.ycor() &lt;-290: |
-| 119 | comp.right(180) |
-| 120 | os.system(&quot;afplay bounce.mp3&amp;&quot;) |
+    # Boundary Player Checking x coordinate
+    if player.xcor() > 290 or player.xcor() < -290:
+        player.right(180)
+        os.system('afplay bounce.mp3&')
 
-*note: you can make the comp.forward speed faster or slower by changing the number within the brackets
+    # Boundary Player Checking y coordinate
+    if player.ycor() > 290 or player.ycor() < -290:
+        player.right(180)
+        os.system("afplay bounce.mp3&")
 
-1.  Save and run your module
+    # Boundary Comp Checking x coordinate
+    if comp.xcor() > 290 or comp.xcor() < -290:
+        comp.right(180)
+        os.system('afplay bounce.mp3&')
+
+    # Boundary Comp Checking y coordinate
+    if comp.ycor() > 290 or comp.ycor() < -290:
+        comp.right(180)
+        os.system('afplay bounce.mp3&')
+```
+_*note: you can make the comp.forward speed faster or slower by changing the number within the brackets_
+
+Step 3.  Save and run your module
 
 Now your opponent turtle is moving around the screen and bouncing of the walls, next we want to give them a score
 
-1.  Within the variable score section add
+Step 4.  Within the variable score section add:
+```python
+# Create variable score
+score = 0
+comp_score = 0
+```
 
-| 47 | #Create variable score |
-| --- | --- |
-| 48 | score = 0 |
-| 49 | Compscore = 0 |
+Step 5.  Now copy the player collision checking paste below and update as below:
+```python
+    # Collision checking
+    if isCollision(player, foods[count]):
+        foods[count].setposition(random.randint(-290, 290), random.randint(-290, 290))
+        foods[count].right(random.randint(0,360))
+        winsound.playSound('chomp.wav', winsound.SND_ASYNC)
+        score +=1
+        mypen.penup()
+        mypen.hideturtle()
+        mypen.setposition(-290, 305)
+        scorestring ="Score: %s" % score
+        mypen.write(scorestring, False, align='left', font=('Arial', 14, 'normal'))
 
-1.  Now copy the #player Collision checking paste below and update as below
+    # Comp Collision checking
+    if isCollision(comp, foods[count]):
+        foods[count].setposition(random.randint(-290, 290), random.randint(-290, 290))
+        foods[count].right(random.randint(0,360))
+        winsound.playSound('chomp.wav', winsound.SND_ASYNC)
+        comp_score+=1
+        # Draw the Comp score on the screen
+        mypen2.undo()
+        mypen2.penup()
+        mypen2.hideturtle()
+        mypen2.setposition(200, 305)
+        scorestring ="Score: %s" % comp_score
+        mypen2.write(scorestring, False, align='left', font=('Arial', 14, 'normal'))
+```
 
-| 107 | #Collision checking |
-| --- | --- |
-| 108 | if isCollision(player, foods[count]): |
-| 109 | foods[count].setposition(random.randint(-290, 290), random.randint(-290, 290)) |
-| 110 | foods[count].right(random.randint(0,360)) |
-| 111 | winsound.PlaySound(&#039;chomp.wav&#039;, winsound.SND_ASYNC) |
-| 112 | Score +=1 |
-| 113 |  |
+Step 6.  Save and run your module
 
-| 111 | winsound.PlaySound(&#039;chomp.wav&#039;, winsound.SND_ASYNC) |
-| --- | --- |
-| 112 | Score +=1 |
-| 113 | mypen.penup() |
-| 114 | mypen.hideturtle() |
-| 115 | mypen.setposition(-290, 305) |
-| 116 | scorestring =&quot;Score: %s&quot; %score |
-| 117 | mypen.write(scorestring, False, align=&quot;left&quot;, font=(&quot;Arial&quot;, 14, &quot;normal&quot;)) |
-| 118 |  |
-| 119 | # Comp Collision checking |
-|  | if isCollision(comp, foods[count]): |
-|  | foods[count].setposition(random.randint(-290, 290), random.randint(-290, 290)) |
-|  | foods[count].right(random.randint(0,360)) |
-|  | winsound.PlaySound(&#039;chomp.wav&#039;, winsound.SND_ASYNC) |
-|  | compscore+=1 |
-|  | #Draw the Comp score on the screen |
-|  | mypen2.undo() |
-|  | mypen2.penup() |
-|  | mypen2.hideturtle() |
-|  | mypen2.setposition(200, 305) |
-|  | scorestring =&quot;Score: %s&quot; %compscore |
-|  | mypen2.write(scorestring, False, align=&quot;left&quot;, font=(&quot;Arial&quot;, 14, &quot;normal&quot;)) |
-|  |  |
+Your code should look like this: Mac/Linux [kbgame10.py](/src/kbgame10.py), Windows [kbgame10.py](/src/kbgame10_win.py)
 
-1.  Save and Run your module
-
-Congratulations Module 10 Completed
+**Congratulations Module 10 Completed**

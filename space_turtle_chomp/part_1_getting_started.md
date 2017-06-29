@@ -59,4 +59,6 @@ Step 9: Now all we need to do is save our code, we can do this by select File --
 
 You should see two windows open up a Python Shell window that will have “Python 3.6.1 (v3.6.1:69c0db5, Mar 21 2017, 17:54:52) [MSC v.1900 32 bit (Intel)]…” or something similar written on it and your Turtle window with a Navy background and Dark Orange turtle moving across the screen. Close both the shell and turtle window to return to your programming code.
 
+Your code should now look like this: [kbgame1.py](/src/kbgame1.py)
+
 **Congratulations Module 1 Completed**

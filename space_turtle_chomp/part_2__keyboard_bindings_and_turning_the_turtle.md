@@ -55,4 +55,6 @@ _*note: 0 is the fasted animation speed._
 
 1.  Save and Run your module again try moving the turtle icon now and then close the Turtle and Python Shell windows
 
+Your code should now look like this: [kbgame2.py](/src/kbgame2.py)
+
 **Congratulations Module 2 Completed**

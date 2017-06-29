@@ -67,4 +67,7 @@ If you enjoyed this and wanted to continue practising, other things you might wa
 
 There are lots of tutorials and help out on the internet if you look. It is also a great idea to try the other game options from Christian Thompson at his site [http://christianthompson.com](http://christianthompson.com)
 
-Congratulations Module 11 Completed
+
+Your code should look like this: Mac/Linux [kbgame11.py](/src/kbgame11.py), Windows [kbgame11.py](/src/kbgame11_win.py)
+
+**Congratulations Module 11 Completed**
