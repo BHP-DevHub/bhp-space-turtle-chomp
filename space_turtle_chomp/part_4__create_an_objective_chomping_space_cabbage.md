@@ -24,50 +24,49 @@ food.setposition(-100, 100)
 ```
 
 Step 4.  Save and run the module
-Step 5.  Now we need to add collision detection as this will allow us to calculate when your turtle collides with (eats) your space cabbage. We do this by using a bit of math to work out where the turtle and cabbage is and if they are touching and the distance between them is small. For the math nerds here we will use one of Pythagoras’s theories. To do that we need to import the math libraries at the top of our application.
 
-| 1 | #Turtle Graphics Game – Space Turtle Chomp |
-| --- | --- |
-| 2 | import turtle |
-| 3 | Import math |
+Step 5.  Now we need to add collision detection as this will allow us to calculate when your turtle collides with (eats) your space cabbage. We do this by using a bit of math to work out where the turtle and cabbage is and if they are touching and the distance between them is small. For the math nerds here we will use one of Pythagoras’s theories. To do that we need to import the math libraries at the top of our application:
+```python
+# Turtle Graphics Game – Space Turtle Chomp
+import turtle
+Import math
+```
 
-1.  So the math formula we use will take the x coordinate of the turtle subtracting from the x coordinate of the cabbage then squaring it and doing the same for the y coordinates for the turtle and cabbage then working out the square root. It’s OK not to completely understand (I’m not sure I do :-) ) but you need to type the following within your While Loop
+Step 6.  So the math formula we use will take the x coordinate of the turtle subtracting from the x coordinate of the cabbage then squaring it and doing the same for the y coordinates for the turtle and cabbage then working out the square root. It’s OK not to completely understand (I’m not sure I do :-) ) but you need to type the following within your While Loop:
+```python
+    # Boundary Checking x coordinate
+    if player.ycor() > 290 or player.ycor() < -290:
+        player.right(180)
 
-| 60 | #Boundary Checking x coordinate |
-| --- | --- |
-| 61 | if player.ycor() &gt; 290 or player.ycor() &lt;-290: |
-| 62 | player.right(180) |
-| 63 |  |
-| 64 | # Collision checking |
-| 65 | d = math.sqrt(math.pow(player.xcor()-food.xcor(),2) + math.pow(player.ycor()-food.ycor(),2)) |
-| 66 | if d &lt; 20: |
-| 67 | food.hideturtle() |
-| 68 |  |
+    # Collision checking
+    d = math.sqrt(math.pow(player.xcor() - food.xcor(), 2) + math.pow(player.ycor() - food.ycor(),2))
+    if d < 20:
+        food.hideturtle()
+```
+So here we have that if the distance between the turtle and cabbage is less than 20 then we will hide the cabbage (food).
 
-So here we have that if the distance between the turtle and cabbage is less than 20 then we will hide the cabbage (food)
+Step 7.  Save and run the module, move your turtle to collide with the cabbageNow that works, it will be a fairly boring game just to hide the cabbage so to make it more interesting what we will do is once the turtle collides (eats) the cabbage we move it to a random position. For this to work we first need to import the random library:
+```python
+# Turtle Graphics Game – Space Turtle Chomp
+import turtle
+import math
+import random
+```
 
-1.  Save and run the module, move your turtle to collide with the cabbageNow that works, it will be a fairly boring game just to hide the cabbage so to make it more interesting what we will do is once the turtle collides (eats) the cabbage we move it to a random position. For this to work we first need to import the random library.
+Step 8.  Now you set the random position within the x and y coordinates:
+```python
+    # Collision checking
+    d = math.sqrt(math.pow(player.xcor()-food.xcor(),2) + math.pow(player.ycor()-food.ycor(),2))
+    if d < 20:
+        food.setposition(random.randint(-290, 290), random.randint(-290, 290))
+```
 
-| 1 | #Turtle Graphics Game – Space Turtle Chomp |
-| --- | --- |
-| 2 | import turtle |
-| 3 | Import math |
-| 4 | Import random |
+Step 9.  Save and Run the modelWe now have the basis of our game*note: we set the random position at -290 and 290 and not -300 and 300 so the cabbage will not appear on the border.
 
-1.  Now you set the random position within the x and y coordinates
+Step 10.  Now you can use the same random position option to randomise where the cabbage appears at the start of the game by replacing the food.setposition:
+```python
+food.setposition(random.randint(-290, 290), random.randint(-290, 290))
+```
+Step 11.  Save and Run the model
 
-| 64 | # Collision checking |
-| --- | --- |
-| 65 | d = math.sqrt(math.pow(player.xcor()-food.xcor(),2) + math.pow(player.ycor()-food.ycor(),2)) |
-| 66 | if d &lt; 20: |
-| 67 | food.setposition(random.randint(-290, 290), random.randint(-290, 290)) |
-
-1.  Save and Run the modelWe now have the basis of our game*note: we set the random position at -290 and 290 and not -300 and 300 so the cabbage will not appear on the boarder
-2.  Now you can use the same random position option to randomise where the cabbage appears at the start of the game by replacing the food.setposition
-
-| 36 | food.setposition(random.randint(-290, 290), random.randint(-290, 290)) |
-| --- | --- |
-
-1.  Save and Run the model
-
-Congratulations Module 4 Completed
+**Congratulations Module 4 Completed**
