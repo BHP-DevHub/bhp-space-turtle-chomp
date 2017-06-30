@@ -10,5 +10,5 @@ Python originated in the late 1980s and its main goal is to be readable by human
 
 > **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
 
-{% include "/python_installation/instructions.md" %}
+{% include "/space_turtle_chomp/python_installation/instructions.md" %}
 
