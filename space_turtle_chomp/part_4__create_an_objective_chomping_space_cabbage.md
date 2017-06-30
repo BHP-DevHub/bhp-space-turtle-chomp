@@ -39,13 +39,15 @@ Step 6.  So the math formula we use will take the x coordinate of the turtle sub
         player.right(180)
 
     # Collision checking
-    d = math.sqrt(math.pow(player.xcor() - food.xcor(), 2) + math.pow(player.ycor() - food.ycor(),2))
+    d = math.sqrt(
+            math.pow(player.xcor() - food.xcor(), 2)
+            + math.pow(player.ycor() - food.ycor(),2))
     if d < 20:
         food.hideturtle()
 ```
 So here we have that if the distance between the turtle and cabbage is less than 20 then we will hide the cabbage (food).
 
-Step 7.  Save and run the module, move your turtle to collide with the cabbageNow that works, it will be a fairly boring game just to hide the cabbage so to make it more interesting what we will do is once the turtle collides (eats) the cabbage we move it to a random position. For this to work we first need to import the random library:
+Step 7.  Save and run the module, move your turtle to collide with the cabbage. Now that works, it will be a fairly boring game just to hide the cabbage so to make it more interesting what we will do is once the turtle collides (eats) the cabbage we move it to a random position. For this to work we first need to import the random library:
 ```python
 # Turtle Graphics Game – Space Turtle Chomp
 import turtle
@@ -56,12 +58,15 @@ import random
 Step 8.  Now you set the random position within the x and y coordinates:
 ```python
     # Collision checking
-    d = math.sqrt(math.pow(player.xcor()-food.xcor(),2) + math.pow(player.ycor()-food.ycor(),2))
+    d = math.sqrt(
+        math.pow(player.xcor()-food.xcor(),2)
+        + math.pow(player.ycor()-food.ycor(),2))
     if d < 20:
         food.setposition(random.randint(-290, 290), random.randint(-290, 290))
 ```
 
-Step 9.  Save and Run the modelWe now have the basis of our game*note: we set the random position at -290 and 290 and not -300 and 300 so the cabbage will not appear on the border.
+Step 9.  Save and run the module. We now have the basis of our game
+_*note: we set the random position at -290 and 290 and not -300 and 300 so the cabbage will not appear on the border._
 
 Step 10.  Now you can use the same random position option to randomise where the cabbage appears at the start of the game by replacing the food.setposition:
 ```python

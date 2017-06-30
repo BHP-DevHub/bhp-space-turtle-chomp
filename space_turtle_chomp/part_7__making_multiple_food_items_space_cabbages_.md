@@ -82,7 +82,7 @@ Step 5.  Save the game as kbgame7 and run your module
 
 You now have multiple cabbages moving around your screen however the screen can start to look a bit jumpy, to fix this we can add the tracer function to the program. This tells the computer not to refresh the screen each time, this speeds up the animation.
 
-Step 6.  Add the tracer function by typing the following in the # Set up screen area:
+Step 6.  Add the tracer function by typing the following in the Set up screen area:
 ```python
 # Set up screen
 turtle.setup(650,650)

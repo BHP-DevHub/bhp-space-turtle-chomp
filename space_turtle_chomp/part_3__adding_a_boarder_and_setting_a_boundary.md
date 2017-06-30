@@ -22,12 +22,12 @@ mypen.hideturtle()
 
 # Create player turtle
 ```
-setposition places the mypen turtle in the bottom left hand corner of your screenpendown gets your mypen turtle ready to drawthe for side in range \(4\) tells your mypen turtle to draw four sides using a similar loop of draw forward for 600 points then turn left repeating four times.
+setposition places the mypen turtle in the bottom left hand corner of your screenpendown gets your mypen turtle ready to drawthe for side in range (4) tells your mypen turtle to draw four sides using a similar loop of draw forward for 600 points then turn left repeating four times.
 
 Step 3. Save and Run your module.
-_\*note: while there is now a boarder your player turtle can still go off screen, this is because we have not set boundaries yet._
+_*note: while there is now a boarder your player turtle can still go off screen, this is because we have not set boundaries yet._
 
-Now we have to do something called boundary checking and what this will do is check the location of our turtle and basically on the left it is lower than -300 and on the right it is greater than +300 we have hit the boarder \(x Axis\) and the same for Top greater than +300 and Bottom lower than -300 \(y Axis\) we have hit the boarder. What we then need to do is choose what we want to happen when this occurs, for this game we are going to bounce of the boarder wall at 180 degrees.
+Now we have to do something called boundary checking and what this will do is check the location of our turtle and basically on the left it is lower than -300 and on the right it is greater than +300 we have hit the boarder (x Axis) and the same for Top greater than +300 and Bottom lower than -300 (y Axis) we have hit the boarder. What we then need to do is choose what we want to happen when this occurs, for this game we are going to bounce of the boarder wall at 180 degrees.
 
 Step 4. As we need this to happen every time during the game we need the code to be written within the while True loop:
 
@@ -36,7 +36,7 @@ while True:
     player.forward(speed)
 
     # Boundary Checking x coordinate
-    if player.xcor() > 290 or player.xcor() < -290::
+    if player.xcor() > 290 or player.xcor() < -290:
         player.right(180)
 
     # Boundary Checking y coordinate

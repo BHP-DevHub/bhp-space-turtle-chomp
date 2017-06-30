@@ -2,7 +2,7 @@
 
 So you now have your space turtle running around the screen chasing and chomping moving space cabbages. Now you want to add a nice background and sounds to your game
 
-Step 8.  The first we want to do is download the background image and sound files into the folder where your kbgame files are stored. Yu can do this by selecting the image file here [kbgame-bg.gif](/src/kbgame-bg.gif)
+Step 8.  The first we want to do is download the background image and sound files into the folder where your kbgame files are stored. Yu can do this by selecting the image file here [kbgame-bg.gif](/src/kbgame-bg.gif).
 
 Step 9.  
 For Windows users download the following .wav files:
@@ -45,7 +45,7 @@ If you want to use your own background image you simply need to create an image 
 
 Now we need to add the sound this again is fairly simple but we use a different function depending on whether you are using a Windows or Apple Mac operating system
 
-###For Apple Mac
+###For Apple Mac or Linux
 
 Step 13.  You need to inform the Python program to use the audio features of your Apple Mac you do this by importing the OS (operating system) commands by typing the following at the top of your application:
 ```python
@@ -90,6 +90,7 @@ Step 14.  Now in the #boundary checking section we type the following:
 ```
 
 _*note: we are playing the bounce sound when either your turtle or the cabbages bounce of the boundary and the chomp sound when you collide with a cabbage_.
+
 The little ‘&amp;’ after .mp3 tells the computer to play the sound in the background so the game doesn’t stop until the sound finishes, the technical term for this is Asynchronous.
 
 ###For Windows
