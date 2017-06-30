@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](space_turtle_chomp/README.md)
-* [Python installation](space_turtle_chomp/python_installation/README.md)
+* [Python installation](space_turtle_chomp/python_installation/)
 * [Code editor](space_turtle_chomp/code_editor/README.md)
 * [Introduction to Python](space_turtle_chomp/python_introduction/README.md)
 * [Part 1 – Getting Started](space_turtle_chomp/part_1_getting_started.md)
