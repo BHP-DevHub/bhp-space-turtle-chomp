@@ -1,3 +1,9 @@
-# Space Turtle Chomp {#space-turtle-chomp}
+# ![](/src/Space Turtle Chomp.png) {#space-turtle-chomp}
 
-Python Turtle Graphics Game
+Original Game Created by Christian Thompson aka @TokyoEdTech
+
+Transcribed and adapted by Kieran McCluskey
+with some help from Adrian Smith
+
+For more Python tutorials visits [www.christianthompson.com](http://www.christianthompson.com)
+
