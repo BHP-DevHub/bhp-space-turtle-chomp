@@ -2,18 +2,21 @@
 
 So you now have your space turtle running around the screen chasing and chomping moving space cabbages. Now you want to add a nice background and sounds to your game
 
-Step 8.  The first we want to do is download the background image and sound files into the folder where your kbgame files are stored. Yu can do this by selecting the image file here [kbgame-bg.gif](/src/kbgame-bg.gif).
+Step 8.  The first we want to do is download the background image and sound files into the folder where your kbgame files are stored. You can do this by selecting the image file here [kbgame-bg.gif](/src/kbgame-bg.gif).
 
 Step 9.  
 For Windows users download the following .wav files:
+
 * [bounce.wav](/src/bounce.wav)
 * [chomp.wav](/src/chomp.wav)
 
 For Apple Mac users download the following .mp3 files:
+
 * [bounce.mp3](/src/bounce.mp3)
 * [chomp.mp3](/src/chomp.mp3)
 
 Step 10.  Now you load the background image by adding the bgpic to the setup screen option:
+
 ```python
 # Set up screen
 turtle.setup(650,650)
@@ -23,7 +26,8 @@ wn.bgpic('kbgame-bg.gif')
 wn.tracer(3)
 ```
 
-Step 11.  The space cabbages currently are the same size as your turtle lets makes them smaller and add a few more. You can do this by typing the following within the #create objective space cabbage food section:
+Step 11.  The space cabbages currently are the same size as your turtle lets makes them smaller and add a few more. You can do this by typing the following within the \#create objective space cabbage food section:
+
 ```python
 # create food
 max_food = 10
@@ -41,22 +45,24 @@ for count in range(max_food):
 
 Step 12.  Save your game as kbgame8 and run your module
 
-If you want to use your own background image you simply need to create an image in your favourite image editor and save it as 600 by 600 and as a .gif file.
+If you want to use your own background image you simply need to create an image in your favourite image editor and save it as a 600 by 600 .gif file.
 
 Now we need to add the sound this again is fairly simple but we use a different function depending on whether you are using a Windows or Apple Mac operating system
 
-###For Apple Mac or Linux
+### For Apple Mac or Linux
 
-Step 13.  You need to inform the Python program to use the audio features of your Apple Mac you do this by importing the OS (operating system) commands by typing the following at the top of your application:
+Step 13.  You need to inform the Python program to use the audio features of your Apple Mac you do this by importing the OS \(operating system\) commands by typing the following at the top of your application:
+
 ```python
 # Turtle Graphics Game – Space Turtle Chomp
 import turtle
-Import math
-Import random
-Import os
+import math
+import random
+import os
 ```
 
-Step 14.  Now in the #boundary checking section we type the following:
+Step 14.  Now in the \#boundary checking section we type the following:
+
 ```python
     # Boundary Player Checking x coordinate
     if player.xcor() > 290 or player.xcor() < -290:
@@ -89,13 +95,14 @@ Step 14.  Now in the #boundary checking section we type the following:
            os.system('afplay chomp.mp3&')
 ```
 
-_*note: we are playing the bounce sound when either your turtle or the cabbages bounce of the boundary and the chomp sound when you collide with a cabbage_.
+_\*note: we are playing the bounce sound when either your turtle or the cabbages bounce of the boundary and the chomp sound when you collide with a cabbage_.
 
-The little ‘&amp;’ after .mp3 tells the computer to play the sound in the background so the game doesn’t stop until the sound finishes, the technical term for this is Asynchronous.
+The little ‘&’ after .mp3 tells the computer to play the sound in the background so the game doesn’t stop until the sound finishes, the technical term for this is Asynchronous.
 
-###For Windows
+### For Windows
 
 Step 13.  You need to inform the Python program to use the audio features of your Windows computer you do this by importing the winsound commands by typing the following at the top of your application:
+
 ```python
 # Turtle Graphics Game – Space Turtle Chomp
 import turtle
@@ -105,6 +112,7 @@ import winsound
 ```
 
 Step 14.  Now in the boundary checking section we type the following:
+
 ```python
     # Boundary Player Checking x coordinate
     if player.xcor() > 290 or player.xcor() < -290:
@@ -135,13 +143,14 @@ Step 14.  Now in the boundary checking section we type the following:
            foods[count].setposition(random.randint(-290, 290), random.randint(-290, 290))
            foods[count].right(random.randint(0,360))
             winsound.PlaySound('chomp.wav', winsound.SND_ASYNC)
-
 ```
-_*note: we are playing the bounce sound when either your turtle or the cabbages bounce of the boundary and the chomp sound when you collide with a cabbage_.The SND_ASYNC tells the computer to play the sound in the background so the game doesn’t stop until the sound finishes, the technical term for this is Asynchronous.
+
+_\*note: we are playing the bounce sound when either your turtle or the cabbages bounce of the boundary and the chomp sound when you collide with a cabbage_.The SND\_ASYNC tells the computer to play the sound in the background so the game doesn’t stop until the sound finishes, the technical term for this is Asynchronous.
 
 Step 15.  Save and run your module
 
 Step 16.  Now you can change the background to black to make the game look better:
+
 ```python
 # Set up screen
 turtle.setup(650,650)
@@ -156,3 +165,4 @@ Step 17.  Save and Run your model
 Your code should look like this: Mac/Linux [kbgame8.py](/src/kbgame8.py), Windows [kbgame8.py](/src/kbgame8_win.py)
 
 **Congratulations Module 8 Completed**
+

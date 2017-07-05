@@ -1,6 +1,6 @@
 ## Part 3 – Adding a border and setting a boundary {#part-3-adding-a-boarder-and-setting-a-boundary}
 
-Currently with our turtle game you can move your player turtle of the screen which we don’t want to do son in this module we are going to draw and boarder and then set boundaries so your player turtle can not move of the screen.
+Currently with our turtle game you can move your player turtle of the screen which we don’t want to do so in this module we are going to draw a boarder and then set boundaries so your player turtle can not move off the screen.
 
 Step 1. Use Save As to save your module as kbgame3
 
@@ -22,12 +22,13 @@ mypen.hideturtle()
 
 # Create player turtle
 ```
-setposition places the mypen turtle in the bottom left hand corner of your screenpendown gets your mypen turtle ready to drawthe for side in range (4) tells your mypen turtle to draw four sides using a similar loop of draw forward for 600 points then turn left repeating four times.
 
-Step 3. Save and Run your module.
-_*note: while there is now a boarder your player turtle can still go off screen, this is because we have not set boundaries yet._
+setposition places the mypen turtle in the bottom left hand corner of your screen pendown gets your mypen turtle ready to draw, the for side in range \(4\) tells your mypen turtle to draw four sides using a simple loop of draw forward for 600 points then turn left and repeat four times.
 
-Now we have to do something called boundary checking and what this will do is check the location of our turtle and basically on the left it is lower than -300 and on the right it is greater than +300 we have hit the boarder (x Axis) and the same for Top greater than +300 and Bottom lower than -300 (y Axis) we have hit the boarder. What we then need to do is choose what we want to happen when this occurs, for this game we are going to bounce of the boarder wall at 180 degrees.
+Step 3. Save and Run your module.  
+_\*note: while there is now a boarder your player turtle can still go off screen, this is because we have not set boundaries yet._
+
+Now we have to do something called boundary checking and what this will do is check the location of our turtle and if the left is lower than -290 and on the right it is greater than +290 we have hit the left and right borders \(x Axis\) and if the top is greater than +290 and bottom lower than -290 we have hit the top and bottom borders \(y Axis\) . We then choose what we want to happen when this occurs, for this game we are going to bounce of the boarder wall at 180 degrees.
 
 Step 4. As we need this to happen every time during the game we need the code to be written within the while True loop:
 
@@ -44,7 +45,7 @@ while True:
         player.right(180)
 ```
 
-_*note we have set the boundary at 290 and -290 so that the turtle bounces when the front of the turtle hits the boundary and not the middle_
+_\*note we have set the boundary at 290 and -290 so that the turtle bounces when the front of the turtle hits the boundary and not the middle_
 
 Step 5. Save and then Run your module
 

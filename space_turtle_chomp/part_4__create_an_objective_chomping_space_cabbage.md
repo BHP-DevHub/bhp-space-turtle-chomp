@@ -1,6 +1,6 @@
 ## Part 4 – Create an objective (chomping space cabbage) and collision checking {#part-4-create-an-objective-chomping-space-cabbage-and-collision-checking}
 
-OK so now you have your turtle that we can move around the screen and if we bump into any of the boarders your turtle will bounce off at 180<sup>0</sup>. Now we need an objective for the game, something for your turtle to do and to score point doing. For this game you are going to have your turtle chase and chomps space cabbages because we are making them green but you could choose a different colour and shape such as space cheese (e.g. yellow triangle)
+OK so now you have your turtle that we can move around the screen and if we bump into any of the boarders your turtle will bounce off at 180<sup>0</sup>. Now we need an objective for the game, something for your turtle to do and to score points for doing. For this game you are going to have your turtle chase and chomps space cabbages because we are making them green but you could choose a different colour and shape such as space cheese (e.g. yellow triangle)
 
 Step 1.  Create the goal / objective
 ```python
@@ -25,11 +25,11 @@ food.setposition(-100, 100)
 
 Step 4.  Save and run the module
 
-Step 5.  Now we need to add collision detection as this will allow us to calculate when your turtle collides with (eats) your space cabbage. We do this by using a bit of math to work out where the turtle and cabbage is and if they are touching and the distance between them is small. For the math nerds here we will use one of Pythagoras’s theories. To do that we need to import the math libraries at the top of our application:
+Step 5.  Now we need to add collision detection as this will allow us to calculate when your turtle collides with (chomps) the space cabbage. We do this by using a bit of math to work out where the turtle and cabbage is and if they are touching and the distance between them is small. For the math nerds here we will use one of Pythagoras’s theories. To do that we need to import the math libraries at the top of our application:
 ```python
 # Turtle Graphics Game – Space Turtle Chomp
 import turtle
-Import math
+import math
 ```
 
 Step 6.  So the math formula we use will take the x coordinate of the turtle subtracting from the x coordinate of the cabbage then squaring it and doing the same for the y coordinates for the turtle and cabbage then working out the square root. It’s OK not to completely understand (I’m not sure I do :-) ) but you need to type the following within your While Loop:
@@ -47,7 +47,7 @@ Step 6.  So the math formula we use will take the x coordinate of the turtle sub
 ```
 So here we have that if the distance between the turtle and cabbage is less than 20 then we will hide the cabbage (food).
 
-Step 7.  Save and run the module, move your turtle to collide with the cabbage. Now that works, it will be a fairly boring game just to hide the cabbage so to make it more interesting what we will do is once the turtle collides (eats) the cabbage we move it to a random position. For this to work we first need to import the random library:
+Step 7.  Save and run the module, move your turtle to collide with the cabbage. Now that works, it will be a fairly boring game just to hide the cabbage so to make it more interesting what we will do is once the turtle collides (chomps) the cabbage we move it to a random position. For this to work we first need to import the random library:
 ```python
 # Turtle Graphics Game – Space Turtle Chomp
 import turtle

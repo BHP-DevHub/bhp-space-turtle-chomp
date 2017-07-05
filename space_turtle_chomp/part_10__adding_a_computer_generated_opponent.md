@@ -2,7 +2,8 @@
 
 In general games are more fun if you get to compete against an opponent, for Space Turtle Chomp this is very easy to do as we have already written all the code we just need to create an opponent section and cut and paste then modify our existing code.
 
-Step 1.  First we need to create a new turtle object as the opponent, move just under #Create player turtle and add:
+Step 1.  First we need to create a new turtle object as the opponent, move just under \#Create player turtle and add:
+
 ```python
 # Create player turtle
 player = turtle.Turtle()
@@ -22,6 +23,7 @@ comp.setposition(random.randint(-290, 290), random.randint(-290, 290))
 Step 2.  Save your game as kbgame10 and run your module
 
 You now have a Red opponent space Turtle now you can make it move around the screen and add the boundary checking so it doesn’t run away. Move to your While Loop section and add the following:
+
 ```python
 while True:
     player.forward(speed)
@@ -47,20 +49,32 @@ while True:
         comp.right(180)
         os.system('afplay bounce.mp3&')
 ```
-_*note: you can make the comp.forward speed faster or slower by changing the number within the brackets_
+
+_\*note: you can make the comp.forward speed faster or slower by changing the number within the brackets_
 
 Step 3.  Save and run your module
 
 Now your opponent turtle is moving around the screen and bouncing of the walls, next we want to give them a score
 
 Step 4.  Within the variable score section add:
+
 ```python
 # Create variable score
 score = 0
 comp_score = 0
 ```
 
-Step 5.  Now copy the player collision checking paste below and update as below:
+Step 5. Now you create your competition score just under your Create competition turtle
+
+```py
+# Create competition score
+mypen2 = turtle.Turtle()
+mypen2.color('red')
+mypen2.hideturtle()
+```
+
+Step 6.  Now copy the player collision checking paste below and update as below:
+
 ```python
     # Collision checking
     if isCollision(player, foods[count]):
@@ -89,8 +103,9 @@ Step 5.  Now copy the player collision checking paste below and update as below:
         mypen2.write(scorestring, False, align='left', font=('Arial', 14, 'normal'))
 ```
 
-Step 6.  Save and run your module
+Step 7.  Save and run your module
 
 Your code should look like this: Mac/Linux [kbgame10.py](/src/kbgame10.py), Windows [kbgame10.py](/src/kbgame10_win.py)
 
 **Congratulations Module 10 Completed**
+

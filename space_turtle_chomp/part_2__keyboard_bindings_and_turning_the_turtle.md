@@ -4,7 +4,7 @@ In part 2 we will assign keys to control the turtle and help it move left, right
 
 Step 1.  A good habit to get into with any coding is to regularly save versions of your code as you make changes as this allows you to either re-use code for other programs or roll back to a working version if something goes wrong. So click File --> Save As and save the file as kbgame2
 
-Step 2.  We need to set keyboard bindings that tell the computer that when I push a certain key to call a certain function. For this to work we need to set the computer to listen for keyboard strokes by typing:
+Step 2.  We need to set keyboard bindings that tell the computer that when you push a certain key to call a certain function. For this to work we need to set the computer to listen for keyboard strokes by typing:
 ```python
 speed = 1
 # Set keyboard binding
@@ -15,7 +15,7 @@ turtle.onkey(increasespeed, 'Up')
 while True:
 ```
 
-We use the turtle.onkey method will set the computer to listen for a certain key and when that is pressed it will run the assigned function.so when the left arrow key is pressed it will call the function called turnleft._*note: that this new piece of code sits between setting the speed (line 12) and the start of the while loop (line 20). In python where the code sits is very important_
+We use the turtle.onkey method to set the computer to listen for a certain key and when that key is pressed it will run the assigned function. So when the left arrow key is pressed it will call the function called turnleft._*note: that this new piece of code sits between setting the speed (line 12) and the start of the while loop (line 20). In python where the code sits is very important_
 
 Step 3.  The next step is to write the turn_left, turn_right and increase_speed functions:
 ```python
