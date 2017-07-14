@@ -1,10 +1,10 @@
 ## Part 3 – Adding a border and setting a boundary {#part-3-adding-a-boarder-and-setting-a-boundary}
 
-Currently with our turtle game you can move your player turtle of the screen which we don’t want to do so in this module we are going to draw a boarder and then set boundaries so your player turtle can not move off the screen.
+Currently with our turtle game you can move your player turtle off the screen which we don’t want to do so in this exercise we are going to draw a boarder and then set boundaries so your turtle can not move off the screen.
 
 Step 1. Use Save As to save your module as kbgame3
 
-Step 2. Move to the top of your code just under the \#Set up Screen and create and new turtle called border
+Step 2. Move to the top of your code just under the \#Set up Screen section and wn.bgcolor\('Navy'\) line and create and new turtle element called border by typing:
 
 ```python
 wn.bgcolor('Navy'):
@@ -23,14 +23,14 @@ mypen.hideturtle()
 # Create player turtle
 ```
 
-setposition places the mypen turtle in the bottom left hand corner of your screen pendown gets your mypen turtle ready to draw, the for side in range \(4\) tells your mypen turtle to draw four sides using a simple loop of draw forward for 600 points then turn left and repeat four times.
+setposition places the mypen turtle in the bottom left hand corner of your screen pendown gets your mypen turtle ready to draw, and the 'for side in range \(4\):' tells your mypen turtle to draw four sides using a simple loop of draw forward for 600 points then turn left and repeat four times.
 
 Step 3. Save and Run your module.  
 _\*note: while there is now a boarder your player turtle can still go off screen, this is because we have not set boundaries yet._
 
-Now we have to do something called boundary checking and what this will do is check the location of our turtle and if the left is lower than -290 and on the right it is greater than +290 we have hit the left and right borders \(x Axis\) and if the top is greater than +290 and bottom lower than -290 we have hit the top and bottom borders \(y Axis\) . We then choose what we want to happen when this occurs, for this game we are going to bounce of the boarder wall at 180 degrees.
+Now we have to do something called boundary checking, what this will do is check the location of our turtle and if the left is lower than -290 and on the right it is greater than +290 we have hit either the left or right borders \(x Axis\) and if the top is greater than +290 and bottom lower than -290 we have hit either the top or bottom borders \(y Axis\). We then simply choose what we want to happen when this occurs, for this game we are going to bounce of the boarder wall at 180 degrees.
 
-Step 4. As we need this to happen every time during the game we need the code to be written within the while True loop:
+Step 4. As we need this to happen every time during the game we need the code to be written within the while True loop under the line player.forward\(speed\):
 
 ```python
 while True:
@@ -45,9 +45,11 @@ while True:
         player.right(180)
 ```
 
-_\*note we have set the boundary at 290 and -290 so that the turtle bounces when the front of the turtle hits the boundary and not the middle_
+_\*note we have set the boundary at 290 and -290 so that the turtle bounces when the front of the turtle hits the boundary and not the middle, also check your indenting and make sure it looks like above, for the while loop to work all the code needs to be indented._
 
 Step 5. Save and then Run your module
+
+Again before moving to the next section you can edit your code to make changes such as changing the angle your turtle bounces at or making the border wall thicker or thinner or adding a colour.
 
 Your code should now look like this: [kbgame3.py](/src/kbgame3.py)
 
