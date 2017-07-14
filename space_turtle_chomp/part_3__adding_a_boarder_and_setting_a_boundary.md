@@ -36,11 +36,11 @@ Step 4. As we need this to happen every time during the game we need the code to
 while True:
     player.forward(speed)
 
-    # Boundary Checking x coordinate
+    # Boundary Player Checking x coordinate
     if player.xcor() > 290 or player.xcor() < -290:
         player.right(180)
 
-    # Boundary Checking y coordinate
+    # Boundary Player Checking y coordinate
     if player.ycor() > 290 or player.ycor() < -290:
         player.right(180)
 ```

@@ -2,19 +2,15 @@
 
 In this section you are going to develop a way of having multiple space cabbages \(food\) moving around the screen for your turtle to chomp. You are going to do this using the python functions of Lists and Loops
 
-Step 1.  First we create the maximum number of cabbages and an empty list:
+Step 1.  First we create the maximum number of cabbages and an empty list by editing the \#Create food section with the following code at the top:
 
 ```python
-player.shape('turtle')
-player.penup()
-Player.speed(0)
-
-# create food
+#Create food
 maxFoods = 6
 foods = []
 ```
 
-Step 2.  Next you create a for loop using maxFoods as the range updating the code 
+Step 2.  Next you create a for loop using maxFoods as the range updating the code
 
 From this:
 
@@ -83,31 +79,31 @@ to:
         foods[count].right(180)
 ```
 
-Step 4.  Now let’s move \(cut and paste\) your collision checking within move goal loop. Make sure you indent and then change food to foods\[count\]:
+Step 4.  Now let’s move \(cut and paste\) your food collision checking code within move goal loop. Make sure you indent and then change food to foods\[count\] so your code now looks like:
 
 ```python
-# Collision checking
-if isCollision(player, food):
-    food.setposition(random.randint(-290, 290), random.randint(-290, 290))
-    food.right(random.randint(0, 360))
+    #Move food around
+    for count in range(maxFoods):
+        food[count].forward(3)
 
-# Collision checking
-if isCollision(player, foods[count]):
-    foods[count].setposition(random.randint(-290, 290), random.randint(-290, 290))
-    foods[count].right(random.randint(0,360))
+    # Collision checking
+    if isCollision(player, food):
+        food.setposition(random.randint(-290, 290), random.randint(-290, 290))
+        food.right(random.randint(0, 360))
+
+    # Collision checking
+    if isCollision(player, foods[count]):
+        foods[count].setposition(random.randint(-290, 290), random.randint(-290, 290))
+        foods[count].right(random.randint(0,360))
 ```
 
 Step 5.  Save the game as kbgame7 and run your module
 
 You now have multiple cabbages moving around your screen however the screen can start to look a bit jumpy, to fix this we can add the tracer function to the program. This tells the computer not to refresh the screen each time and speeds up the animation.
 
-Step 6.  Add the tracer function by typing the following in the Set up screen area:
+Step 6.  Add the tracer function by typing the following at the end of the \#Set up screen area:
 
 ```python
-# Set up screen
-turtle.setup(650,650)
-wn = turtle.Screen()
-wn.bgcolor("navy")
 wn.tracer(3)
 ```
 

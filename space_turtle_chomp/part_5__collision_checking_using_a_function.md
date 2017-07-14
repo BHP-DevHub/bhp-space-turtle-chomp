@@ -1,18 +1,13 @@
 ## Part 5 – Collision checking using a function {#part-5-collision-checking-using-a-function}
 
-You have collision checking working but as we add more cabbages it makes the code easier if you convert your existing code to a function
+You have collision checking working but as we add more cabbages it makes the code easier if you convert your existing collision code to a function
 
-Step 1.  To create as a function we will use the “isCollision to retrun a true or fales return, to do that type:
+Step 1.  To create as a function we will use the “isCollision to return a True or False return, to do that type the following at the end of the \#Define functions section:
 
 ```python
-def increasespeed ()
-    global speed
-    speed += 1
 
 def isCollision(t1, t2):
-       d = math.sqrt(
-               math.pow(t1.xcor()-t2.xcor(),2)
-               + math.pow(t1.ycor()-t2.ycor(),2))
+       d = math.sqrt(math.pow(t1.xcor()-t2.xcor(),2) + math.pow(t1.ycor()-t2.ycor(),2))
        if d < 20:
            return True
        else:
@@ -21,7 +16,7 @@ def isCollision(t1, t2):
 
 So your function uses t1 and t2 as generic terms instead of turtle and food and uses the same collision formula as before with an if statement that returns a True vales if they are in the same location \(collide\) and a False value when they don’t.
 
-Step 2.  Now you need to update the While Loop collision section with
+Step 2.  Now you need to update the code within the While Loop collision section to look like:
 
 ```python
 # Collision checking
