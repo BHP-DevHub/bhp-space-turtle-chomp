@@ -6,7 +6,7 @@ Step 1.  First we create the maximum number of cabbages and an empty list by edi
 
 ```python
 #Create food
-maxFoods = 6
+max_foods = 6
 foods = []
 ```
 
@@ -25,7 +25,7 @@ food.speed(0)
 To this:
 
 ```python
-for count in range(maxFoods):
+for count in range(max_foods):
     foods.append (turtle.Turtle())
     foods[count].color("lightgreen")
     foods[count].shape("circle")
@@ -108,6 +108,8 @@ wn.tracer(3)
 ```
 
 Step 7.  Save and run your module
+
+You can play with your code by increasing the maxFood number
 
 Your code should now look like this: [kbgame7.py](/src/kbgame7.py)
 

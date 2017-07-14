@@ -2,33 +2,24 @@
 
 You have most of your Space Turtle Chomp game developed now, however at the moment it can go on forever, like most games what you can do is set a time limit for the game duration, again this is simple to do.
 
-Step 1.  Move to the top of your code and import the time function:
+Step 1.  Move to the top of your code and import the time function with the other import's:
 
 ```python
-# Turtle Graphics Game – Space Turtle Chomp
-import turtle
-import math
-import random
-import os
 import time
 ```
 
-Step 2.  Move down to the just below the \#Set speed variable section and add:
+Step 2.  Move down to the just below the \# Set speed variable section and add:
 
 ```python
-# Set Speed variable
-speed = 1
-
 # Set game time limit for 1 minute (60 seconds)
 timeout = time.time() + 10*6
 ```
 
 _note we set our game timeout to 6 lots of 10 second for a 1 minute game we could set it to 5 for 30 seconds or 5\*5 for 25 seconds_
 
-Step 3.  Move to the While Loop section and add the following:
+Step 3.  Move to the top of the while true section and add the following:
 
 ```python
-while True:
     gametime = 0
     if gametime == 6 or time.time() > timeout:
         break
@@ -41,7 +32,7 @@ Step 4.  Save your game as kbgame11 and run your Module
 
 You should now have 60 seconds to chomp more space cabbages than your computer opponent before the game ends, fantastic well done. The last thing you can do for your game as part of this tutorial is have the game display who wins at the end of 60 seconds.
 
-Step 5.  Move to the very end of your code and add the following simple if statement and argument:
+Step 5.  Move to the very end of your code and add the following simple if statement and argument this time the text is not indented until after the if statement:
 
 ```python
 if (int(score) > int(comp_score)):
