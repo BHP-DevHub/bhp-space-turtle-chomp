@@ -2,11 +2,11 @@
 
 OK so now you have your turtle that we can move around the screen and if we bump into any of the boarders your turtle will bounce off at 180<sup>0</sup>. Now we need an objective for the game, something for your turtle to do and to score points for doing. For this game you are going to have your turtle chase and chomps space cabbages because we are making a green cicle object for your turtle to chase. You could choose a different colour and shape such as space cheese (e.g. yellow triangle)
 
-Step 1.  Create the goal / objective, type the following under the # create food section after player.speed(0)
+Step 1.  Create the goal / objective, type the following under the # Create food section after player.speed(0)
 
 ```python
 
-#create food
+# Create food
 food = turtle.Turtle()
 food.color("lightgreen")
 food.shape("circle")

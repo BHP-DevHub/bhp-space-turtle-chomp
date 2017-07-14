@@ -2,10 +2,10 @@
 
 In this section you are going to develop a way of having multiple space cabbages \(food\) moving around the screen for your turtle to chomp. You are going to do this using the python functions of Lists and Loops
 
-Step 1.  First we create the maximum number of cabbages and an empty list by editing the \#Create food section with the following code at the top:
+Step 1.  First we create the maximum number of cabbages and an empty list by editing the \# Create food section with the following code at the top:
 
 ```python
-#Create food
+# Create food
 max_foods = 6
 foods = []
 ```

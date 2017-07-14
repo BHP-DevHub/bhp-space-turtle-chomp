@@ -14,7 +14,7 @@ Step 1.  Within the While Loop add the following code after the #Boundary Checki
 
 Step 2.  Save your game as kbgame6 and run the module
 
-Step 3.  Now your cabbage moves across the screen but at the moment it always moves to the right, so let make the game more interesting by using the random function again by adding the following to the end of the #Collision checking section:
+Step 3.  Now your cabbage moves across the screen but at the moment it always moves to the right, so let make the game more interesting by using the random function again by adding the following to the end of the # Collision checking section:
 ```python
 
     food.right(random.randint(0, 360))

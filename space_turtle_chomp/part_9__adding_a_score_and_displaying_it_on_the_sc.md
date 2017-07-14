@@ -9,7 +9,7 @@ Step 1.  Move to after the \#Create player turtle section of your code and type 
 score = 0
 ```
 
-Step 2.  Move to the bottom of your While Loop at the end of your \#Collision checking section and type:
+Step 2.  Move to the bottom of your while True loop at the end of your \# Collision checking section and type:
 
 ```python
          score +=1
@@ -17,10 +17,10 @@ Step 2.  Move to the bottom of your While Loop at the end of your \#Collision ch
 
 \*note: this will calculate a score but you can’t see it on the screen
 
-Step 3.  Now we add the score to the screen by re-using the mypen turtle and using it to write the score, you can do this by typing the fllwoing under the score +=1 text in the \#Collision checking section:
+Step 3.  Now we add the score to the screen by re-using the mypen turtle and using it to write the score, you can do this by typing the fllwoing under the score +=1 text in the \# Collision checking section:
 
 ```python
-    #Draw the score on the screen
+    # Draw the score on the screen
     mypen.penup()
     mypen.hideturtle()
     mypen.setposition(-290, 310)
