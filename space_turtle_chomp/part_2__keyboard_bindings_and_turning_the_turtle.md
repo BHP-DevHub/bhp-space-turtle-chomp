@@ -52,7 +52,7 @@ Step 7.  You might see that the turtle icon jumps a bit when you press the arrow
 ```python
 
 player.penup()
-Player.speed(0)
+player.speed(0)
 ```
 
 _*note: 0 is the fasted animation speed._
