@@ -1,6 +1,6 @@
 ## Part 4 – Create an objective (chomping space cabbage) and collision checking {#part-4-create-an-objective-chomping-space-cabbage-and-collision-checking}
 
-OK so now you have your turtle that we can move around the screen and if we bump into any of the boarders your turtle will bounce off at 180<sup>0</sup>. Now we need an objective for the game, something for your turtle to do and to score points for doing. For this game you are going to have your turtle chase and chomps space cabbages because we are making a green cicle object for your turtle to chase. You could choose a different colour and shape such as space cheese (e.g. yellow triangle)
+OK so now you have your turtle that we can move around the screen and if we bump into any of the borders your turtle will bounce off at 180<sup>0</sup>. Now we need an objective for the game, something for your turtle to do and to score points for doing. For this game you are going to have your turtle chase and chomps space cabbages because we are making a green circle object for your turtle to chase. You could choose a different colour and shape such as space cheese (e.g. yellow triangle)
 
 Step 1.  Create the goal / objective, type the following under the # Create food section after player.speed(0)
 
