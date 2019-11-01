@@ -47,7 +47,7 @@ else:
 
 The If statement compares your score \(player\) against the opponent score \(comp\) and if your score is higher it prints the You Win message and if it is lower it prints the You Loose message.
 
-That is the end of today’s tutorial, if you got through all of it in 1 day well done that is an awesome effort but it doesn’t matter if you didn’t as the tutorial is online and you can still access it from home with your parents help.
+That is the end of today’s tutorial, if you got through all of it in 1 day well done that is an awesome effort but it doesn’t matter if you didn’t as the tutorial is online and you can still access it from home. Don't forget to join our She Codes online community to keep in touch with your mentors and ask for help.
 
 If you enjoyed this and wanted to continue practising, other things you might want to try is
 
