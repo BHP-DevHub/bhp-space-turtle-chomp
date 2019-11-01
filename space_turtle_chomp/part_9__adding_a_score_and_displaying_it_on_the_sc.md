@@ -17,7 +17,7 @@ Step 2.  Move to the bottom of your while True loop at the end of your \# Collis
 
 \*note: this will calculate a score but you can’t see it on the screen
 
-Step 3.  Now we add the score to the screen by re-using the mypen turtle and using it to write the score, you can do this by typing the fllwoing under the score +=1 text in the \# Collision checking section:
+Step 3.  Now we add the score to the screen by re-using the mypen turtle and using it to write the score, you can do this by typing the following under the score +=1 text in the \# Collision checking section:
 
 ```python
     # Draw the score on the screen
