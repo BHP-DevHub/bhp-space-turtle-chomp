@@ -1,6 +1,6 @@
 ## Part 3 – Adding a border and setting a boundary {#part-3-adding-a-boarder-and-setting-a-boundary}
 
-Currently with our turtle game you can move your player turtle off the screen which we don’t want to do so in this exercise we are going to draw a boarder and then set boundaries so your turtle can not move off the screen.
+Currently with our turtle game you can move your player turtle off the screen which we don’t want to do so in this exercise we are going to draw a border and then set boundaries so your turtle can not move off the screen.
 
 Step 1. Use Save As to save your module as kbgame3
 
@@ -26,7 +26,7 @@ mypen.hideturtle()
 setposition places the mypen turtle in the bottom left hand corner of your screen pendown gets your mypen turtle ready to draw, and the 'for side in range \(4\):' tells your mypen turtle to draw four sides using a simple loop of draw forward for 600 points then turn left and repeat four times.
 
 Step 3. Save and Run your module.  
-_\*note: while there is now a boarder your player turtle can still go off screen, this is because we have not set boundaries yet._
+_\*note: while there is now a border your player turtle can still go off screen, this is because we have not set boundaries yet._
 
 Now we have to do something called boundary checking, what this will do is check the location of our turtle and if the left is lower than -290 and on the right it is greater than +290 we have hit either the left or right borders \(x Axis\) and if the top is greater than +290 and bottom lower than -290 we have hit either the top or bottom borders \(y Axis\). We then simply choose what we want to happen when this occurs, for this game we are going to bounce of the boarder wall at 180 degrees.
 
