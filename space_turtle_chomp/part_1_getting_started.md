@@ -26,7 +26,7 @@ wn = turtle.Screen()
 wn.bgcolor('navy')
 ```
 
-turtle.setup sets the size of the Turtle game window \(it’s not necessary but helps when using different screen sizes\). wn is the name we are calling the screen \(as we learnt in the Python introduction all variables need a name\). bgcolor allows us to set the background colour. There are lots of colours to choose from. See https://python-graph-gallery.com/wp-content/uploads/100_Color_names_python.png for options.
+turtle.setup sets the size of the Turtle game window \(it’s not necessary but helps when using different screen sizes\). wn is the name we are calling the screen \(as we learnt in the Python introduction all variables need a name\). bgcolor allows us to set the background colour. There are lots of colours to choose from. See this colour chart https://python-graph-gallery.com/wp-content/uploads/100_Color_names_python.png for options.
 
 _\*note the American spelling of color, this is something to watch out for when programing_.  
 As always it is good programming to leave a comment \(\#\) before your code so you can remember what it does
