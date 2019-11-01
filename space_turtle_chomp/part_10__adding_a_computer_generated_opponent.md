@@ -23,7 +23,7 @@ Step 3. To move your component turtle add the following code to the while True l
     comp.forward(12)
 ```
 
-Step 3. Next cut a the following text and paste it directly underneath:
+Step 4. Next cut the following text and paste it directly underneath:
 
 ```python
     # Boundary Player Checking x coordinate
@@ -37,7 +37,7 @@ Step 3. Next cut a the following text and paste it directly underneath:
         os.system("afplay bounce.mp3&")
 ```
 
-Step 4. Edit the pasted text to:
+Step 5. Edit the pasted text to:
 
 ```py
     # Boundary Comp Checking x coordinate
@@ -53,17 +53,17 @@ Step 4. Edit the pasted text to:
 
 _\*note: you can make the comp.forward speed faster or slower by changing the number within the brackets_
 
-Step 3.  Save and run your module
+Step 6.  Save and run your module
 
 Now your opponent turtle is moving around the screen and bouncing of the walls, next we want to give them a score
 
-Step 4.  Within the \# Create variable score section add:
+Step 7.  Within the \# Create variable score section add:
 
 ```python
 comp_score = 0
 ```
 
-Step 5. Now you create your competition score just under your \# Create opponent turtle section by adding:
+Step 8. Now you create your competition score just under your \# Create opponent turtle section by adding:
 
 ```py
 # Create competition score
@@ -72,7 +72,7 @@ mypen2.color('red')
 mypen2.hideturtle()
 ```
 
-Step 6.  Now copy the player collision checking section and paste direct below:
+Step 9.  Now copy the player collision checking section and paste direct below:
 
 ```python
     # Collision checking
@@ -88,7 +88,7 @@ Step 6.  Now copy the player collision checking section and paste direct below:
         mypen.write(scorestring, False, align='left', font=('Arial', 14, 'normal'))
 ```
 
-Step 7.  Edit the pasted code to:
+Step 10.  Edit the pasted code to:
 
 ```
     # Comp Collision checking
@@ -108,7 +108,7 @@ Step 7.  Edit the pasted code to:
 
 
 
-Step 8. Save and run your module
+Step 11. Save and run your module
 
 Your code should look like this: Mac/Linux [kbgame10.py](/src/kbgame10.py), Windows [kbgame10.py](/src/kbgame10_win.py)
 
