@@ -26,7 +26,7 @@ wn = turtle.Screen()
 wn.bgcolor('navy')
 ```
 
-turtle.setup sets the size of the Turtle game window \(it’s not necessary but helps when using different screen sizes\). wn is the name we are calling the screen \(as we learnt in the Python introduction all variables need a name\). bgcolor allows us to set the background colour. There are lots of colours to choose from. See [color chart](../src/color_chart.jpg) for options.
+turtle.setup sets the size of the Turtle game window \(it’s not necessary but helps when using different screen sizes\). wn is the name we are calling the screen \(as we learnt in the Python introduction all variables need a name\). bgcolor allows us to set the background colour. There are lots of colours to choose from. See https://python-graph-gallery.com/wp-content/uploads/100_Color_names_python.png for options.
 
 _\*note the American spelling of color, this is something to watch out for when programing_.  
 As always it is good programming to leave a comment \(\#\) before your code so you can remember what it does
@@ -41,7 +41,7 @@ player.shape('turtle')
 player.penup()
 ```
 
-So we create a new turtle variable called player then use the inbuilt turtle attributes to help set it up, player.color \(again we can select a different colour from the [color chart](/src/color_chart.jpg)\). player.shape selects the shape \(you can also use circle, arrow, square and classic\). Penup means that the turtle shape won’t leave a line went it moves \(think of a pen in your hand, penup\(\) you don’t draw, pendown\(\) you do draw.
+So we create a new turtle variable called player then use the inbuilt turtle attributes to help set it up, player.color \(again we can select a different colour from the color chart). player.shape selects the shape \(you can also use circle, arrow, square and classic\). Penup means that the turtle shape won’t leave a line went it moves \(think of a pen in your hand, penup\(\) you don’t draw, pendown\(\) you do draw.
 
 Step 7. Now we set the speed we want our turtle to move across the screen at:
 
