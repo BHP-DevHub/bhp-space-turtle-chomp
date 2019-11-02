@@ -6,7 +6,7 @@ Step 1.  First we create the maximum number of cabbages and an empty list by edi
 
 ```python
 # Create food
-max_foods = 6
+maxFoods = 6
 foods = []
 ```
 
@@ -25,7 +25,7 @@ food.speed(0)
 To this:
 
 ```python
-for count in range(max_foods):
+for count in range(maxFoods):
     foods.append (turtle.Turtle())
     foods[count].color("lightgreen")
     foods[count].shape("circle")
