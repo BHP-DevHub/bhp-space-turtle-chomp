@@ -1,9 +1,9 @@
-# Summary
+# Table of contents
 
 * [Introduction](README.md)
 * [Python installation](space_turtle_chomp/python_installation/README.md)
 * [Code editor](space_turtle_chomp/code_editor/README.md)
-* [Introduction to Python](space_turtle_chomp/python_introduction/README.md)
+* [Introduction to Python](python_introduction.md)
 * [Part 1 – Getting Started](space_turtle_chomp/part_1_getting_started.md)
 * [Part 2 – Keyboard](space_turtle_chomp/part_2__keyboard_bindings_and_turning_the_turtle.md)
 * [Part 3 – Border](space_turtle_chomp/part_3__adding_a_boarder_and_setting_a_boundary.md)
