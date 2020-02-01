@@ -114,7 +114,7 @@ Step 7. Save and run your module
 
 You can play with your code by increasing the maxFood number
 
-Your code should now look like this: [kbgame7.py](https://github.com/BHP-DevHub/bhp-space-turtle-chomp/tree/b03a1451d0eae27d4199810acc7980ab40f2e93b/src/kbgame7.py)
+Your code should now look like this:  [kbgame7.py](https://github.com/BHP-DevHub/bhp-space-turtle-chomp/blob/master/src/kbgame7.py)
 
 **Congratulations Module 7 Completed**
 
