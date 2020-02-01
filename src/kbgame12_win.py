@@ -129,23 +129,23 @@ while True:
         
 
     #Move Food around
-    for count in range(maxFoods):
-        foods[count].forward(3)
+    for food in foods:
+        food.forward(3)
 
         #Boundary Food Checking x coordinate
-        if foods[count].xcor() > 290 or foods[count].xcor() <-290:
-           foods[count].right(180)
+        if food.xcor() > 290 or food.xcor() <-290:
+           food.right(180)
            insound.PlaySound('bounce.wav', winsound.SND_ASYNC)
 
         #Boundary Food Checking y coordinate
-        if foods[count].ycor() > 290 or foods[count].ycor() <-290:
-           foods[count].right(180)
+        if food.ycor() > 290 or food.ycor() <-290:
+           food.right(180)
            insound.PlaySound('bounce.wav', winsound.SND_ASYNC)
 
         #Player Collision checking
-        if isCollision(player, foods[count]):
-           foods[count].setposition(random.randint(-290, 290), random.randint(-290, 290))
-           foods[count].right(random.randint(0,360))
+        if isCollision(player, food):
+           food.setposition(random.randint(-290, 290), random.randint(-290, 290))
+           food.right(random.randint(0,360))
            insound.PlaySound('chomp.wav', winsound.SND_ASYNC)
            score+=1
            #Draw the score on the screen
@@ -157,9 +157,9 @@ while True:
            mypen.write(scorestring, False, align="left", font=("Arial", 14, "normal"))
 
        # Comp Collision checking
-        if isCollision(comp, foods[count]):
-           foods[count].setposition(random.randint(-290, 290), random.randint(-290, 290))
-           foods[count].right(random.randint(0,360))
+        if isCollision(comp, food):
+           food.setposition(random.randint(-290, 290), random.randint(-290, 290))
+           food.right(random.randint(0,360))
            insound.PlaySound('chomp.wav', winsound.SND_ASYNC)
            compscore+=1
            #Draw the Comp score on the screen

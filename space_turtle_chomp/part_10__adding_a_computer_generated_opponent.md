@@ -76,9 +76,9 @@ Step 9.  Now copy the player collision checking section and paste direct below:
 
 ```python
     # Collision checking
-    if isCollision(player, foods[count]):
-        foods[count].setposition(random.randint(-290, 290), random.randint(-290, 290))
-        foods[count].right(random.randint(0,360))
+    if isCollision(player, food):
+        food.setposition(random.randint(-290, 290), random.randint(-290, 290))
+        food.right(random.randint(0,360))
         winsound.playSound('chomp.wav', winsound.SND_ASYNC)
         score +=1
         mypen.penup()
@@ -90,11 +90,11 @@ Step 9.  Now copy the player collision checking section and paste direct below:
 
 Step 10.  Edit the pasted code to:
 
-```
+```python
     # Comp Collision checking
-    if isCollision(comp, foods[count]):
-        foods[count].setposition(random.randint(-290, 290), random.randint(-290, 290))
-        foods[count].right(random.randint(0,360))
+    if isCollision(comp, food):
+        food.setposition(random.randint(-290, 290), random.randint(-290, 290))
+        food.right(random.randint(0,360))
         winsound.playSound('chomp.wav', winsound.SND_ASYNC)
         comp_score+=1
         # Draw the Comp score on the screen
