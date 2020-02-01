@@ -61,7 +61,7 @@ Step 7.  Now in the \#boundary checking section we type the following os.system.
         os.system('afplay bounce.mp3&')
 
     # Move Food around
-    for count in range(maxFoods):
+    for food in foods:
         foods[count].forward(3)
 
         # Boundary Food Checking x coordinate
@@ -108,22 +108,22 @@ Step 7.  Now in the \#boundary checking section we type the following winsound.P
 
     # Move Food around
     for count in range(maxFoods):
-        foods[count].forward(3)
+        food.forward(3)
 
         #  Boundary Food Checking x coordinate
-        if foods[count].xcor() > 290 or foods[count].xcor() < -290:
-           foods[count].right(180)
+        if food.xcor() > 290 or food.xcor() < -290:
+           food.right(180)
             winsound.PlaySound('bounce.wav', winsound.SND_ASYNC)
 
         # Boundary Food Checking y coordinate
-        if foods[count].ycor() > 290 or foods[count].ycor() < -290:
-           foods[count].right(180)
+        if food.ycor() > 290 or food.ycor() < -290:
+           food.right(180)
             winsound.PlaySound('bounce.wav', winsound.SND_ASYNC)
 
         # Collision checking
-        if isCollision(player, foods[count]):
-           foods[count].setposition(random.randint(-290, 290), random.randint(-290, 290))
-           foods[count].right(random.randint(0,360))
+        if isCollision(player, food):
+           food.setposition(random.randint(-290, 290), random.randint(-290, 290))
+           food.right(random.randint(0,360))
             winsound.PlaySound('chomp.wav', winsound.SND_ASYNC)
 ```
 

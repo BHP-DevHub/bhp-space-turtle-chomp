@@ -7,7 +7,7 @@ Step 1. Use Save As to save your module as kbgame3
 Step 2. Move to the top of your code just under the \#Set up Screen section and wn.bgcolor\('Navy'\) line and create and new turtle element called border by typing:
 
 ```python
-wn.bgcolor('Navy'):
+wn.bgcolor('Navy')
 
 # Draw border
 mypen = turtle.Turtle()
