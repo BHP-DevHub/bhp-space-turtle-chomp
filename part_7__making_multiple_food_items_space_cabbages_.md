@@ -1,8 +1,8 @@
-## Part 7 – Making multiple food items \(Space Cabbages\) to chase {#part-7-making-multiple-food-items-space-cabbages-to-chase}
+# Part 7 - Food!
 
 In this section you are going to develop a way of having multiple space cabbages \(food\) moving around the screen for your turtle to chomp. You are going to do this using the python functions of Lists and Loops
 
-Step 1.  First we create the maximum number of cabbages and an empty list by editing the \# Create food section with the following code at the top:
+Step 1. First we create the maximum number of cabbages and an empty list by editing the \# Create food section with the following code at the top:
 
 ```python
 # Create food
@@ -10,7 +10,7 @@ maxFoods = 6
 foods = []
 ```
 
-Step 2.  Next you create a for loop using maxFoods as the range updating the code
+Step 2. Next you create a for loop using maxFoods as the range updating the code
 
 From this:
 
@@ -36,7 +36,7 @@ for count in range(maxFoods):
 
 So we use the append function to add our maximum number of cabbages held in the list, so foods.\[1\] is a turtle object, foods.\[2\] is a turtle object etc. etc.
 
-Step 3.  Now you need to do the same thing for moving the turtle within the \# Move Food around section by changing
+Step 3. Now you need to do the same thing for moving the turtle within the \# Move Food around section by changing
 
 this:
 
@@ -79,7 +79,7 @@ to:
             food.right(180)
 ```
 
-Step 4.  Now let’s move \(cut and paste\) your food collision checking code within move goal loop. Make sure you indent your code now looks like:
+Step 4. Now let’s move \(cut and paste\) your food collision checking code within move goal loop. Make sure you indent your code now looks like:
 
 ```python
     #Move food around
@@ -87,11 +87,11 @@ Step 4.  Now let’s move \(cut and paste\) your food collision checking code wi
         food.forward(3)
 
        #Boundary Food Checking x coordinate
-        if food.xcor() > 290 or foods[count].xcor() <-290:
+        if food.xcor() > 290 or food.xcor() <-290:
            food.right(180)
 
         #Boundary Food Checking y coordinate
-        if food.ycor() > 290 or foods[count].ycor() <-290:
+        if food.ycor() > 290 or food.ycor() <-290:
            food.right(180)
 
         # Collision checking
@@ -100,21 +100,21 @@ Step 4.  Now let’s move \(cut and paste\) your food collision checking code wi
             food.right(random.randint(0, 360))
 ```
 
-Step 5.  Save the game as kbgame7 and run your module
+Step 5. Save the game as kbgame7 and run your module
 
 You now have multiple cabbages moving around your screen however the screen can start to look a bit jumpy, to fix this we can add the tracer function to the program. This tells the computer not to refresh the screen each time and speeds up the animation.
 
-Step 6.  Add the tracer function by typing the following at the end of the \#Set up screen area:
+Step 6. Add the tracer function by typing the following at the end of the \#Set up screen area:
 
 ```python
 wn.tracer(3)
 ```
 
-Step 7.  Save and run your module
+Step 7. Save and run your module
 
 You can play with your code by increasing the maxFood number
 
-Your code should now look like this: [kbgame7.py](/src/kbgame7.py)
+Your code should now look like this: [kbgame7.py](https://github.com/BHP-DevHub/bhp-space-turtle-chomp/tree/b03a1451d0eae27d4199810acc7980ab40f2e93b/src/kbgame7.py)
 
 **Congratulations Module 7 Completed**
 
