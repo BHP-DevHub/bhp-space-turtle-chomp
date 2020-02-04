@@ -2,8 +2,8 @@
 
 We will start of today creating a simple Python game using Python Turtle Graphics. Turtle Graphics a prebuilt set of python instructions that allow you to create and move characters around the screen allowing you to draw pictures, logos and create simple animations or games.
 
-Step 1.  If not already open please open your Python IDE application.  
-You should see your Shell Script window.
+Step 1.  If not already open please open VS Code.  
+You should see your Terminal / Command Prompt window.
 
 Step 2.  Select File --&gt; New File you should see your program window
 
