@@ -26,12 +26,13 @@ To this:
 
 ```python
 for count in range(maxFoods):
-    foods.append (turtle.Turtle())
-    foods[count].color("lightgreen")
-    foods[count].shape("circle")
-    foods[count].penup()
-    foods[count].speed(0)
-    foods[count].setposition(random.randint(-290, 290), random.randint(-290, 290))
+    new_food = turtle.Turtle()
+    new_food.color("lightgreen")
+    new_food.shape("circle")
+    new_food.penup()
+    new_food.speed(0)
+    new_food.setposition(random.randint(-290, 290), random.randint(-290, 290))
+    foods.append(new_food)
 ```
 
 So we use the append function to add our maximum number of cabbages held in the list, so foods.\[1\] is a turtle object, foods.\[2\] is a turtle object etc. etc.
@@ -87,11 +88,11 @@ Step 4.  Now let’s move \(cut and paste\) your food collision checking code wi
         food.forward(3)
 
        #Boundary Food Checking x coordinate
-        if food.xcor() > 290 or foods[count].xcor() <-290:
+        if food.xcor() > 290 or food.xcor() <-290:
            food.right(180)
 
         #Boundary Food Checking y coordinate
-        if food.ycor() > 290 or foods[count].ycor() <-290:
+        if food.ycor() > 290 or food.ycor() <-290:
            food.right(180)
 
         # Collision checking

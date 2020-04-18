@@ -28,8 +28,8 @@ Step 4.  The space cabbages currently are the same size as your turtle lets make
 max_foods = 10
 
 
-for count in range(max_foods):
-    foods[count].shapesize(.5)
+for food in foods:
+    foods.shapesize(.5)
 
 ```
 
@@ -62,22 +62,22 @@ Step 7.  Now in the \#boundary checking section we type the following os.system.
 
     # Move Food around
     for food in foods:
-        foods[count].forward(3)
+        food.forward(3)
 
         # Boundary Food Checking x coordinate
-        if foods[count].xcor() > 290 or foods[count].xcor() < -290:
-           foods[count].right(180)
+        if food.xcor() > 290 or food.xcor() < -290:
+           food.right(180)
            os.system('afplay bounce.mp3&')
 
         # Boundary Food Checking y coordinate
-        if foods[count].ycor() > 290 or foods[count].ycor() < -290:
-           foods[count].right(180)
+        if food.ycor() > 290 or food.ycor() < -290:
+           food.right(180)
            os.system('afplay bounce.mp3&')
 
         # Collision checking
-        if isCollision(player, foods[count]):
-           foods[count].setposition(random.randint(-290, 290), random.randint(-290, 290))
-           foods[count].right(random.randint(0,360))
+        if isCollision(player, food):
+           food.setposition(random.randint(-290, 290), random.randint(-290, 290))
+           food.right(random.randint(0,360))
            os.system('afplay chomp.mp3&')
 ```
 

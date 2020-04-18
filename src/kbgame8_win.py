@@ -36,13 +36,14 @@ maxFoods = 10
 foods = []
 
 for count in range(maxFoods):
-    foods.append (turtle.Turtle())
-    foods[count].color("lightgreen")
-    foods[count].shape("circle")
-    foods[count].shapesize(.5)
-    foods[count].penup()
-    foods[count].speed(0)
-    foods[count].setposition(random.randint(-290, 290), random.randint(-290, 290))
+    new_food = turtle.Turtle()
+    new_food.color("lightgreen")
+    new_food.shape("circle")
+    new_food.shapesize(.5)
+    new_food.penup()
+    new_food.speed(0)
+    new_food.setposition(random.randint(-290, 290), random.randint(-290, 290))
+    foods.append(new_food)
 
 #Set speed variable
 speed = 1
@@ -104,7 +105,7 @@ while True:
 
 
         #Collision checking
-        if isCollision(player, foods[count]):
+        if isCollision(player, food):
            food.setposition(random.randint(-290, 290), random.randint(-290, 290))
            food.right(random.randint(0,360))
            winsound.PlaySound('chomp.wav', winsound.SND_ASYNC)
