@@ -31,7 +31,7 @@ Step 5.  Save and run your module, have a play with different speeds. Your food 
 Step 6.  Cut the following code and paste it directly underneath making sure the indents are aligned
 ```python
     # Boundary Player Checking x coordinate
-    if player.xcor() > 290 or player.xcor() < -290::
+    if player.xcor() > 290 or player.xcor() < -290:
         player.right(180)
 
     # Boundary Player Checking y coordinate
