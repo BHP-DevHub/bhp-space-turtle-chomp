@@ -2,7 +2,7 @@
 
 You have collision checking working but as we add more cabbages it makes the code easier if you convert your existing collision code to a function
 
-Step 1.  To create as a function we will use the “isCollision to return a True or False return, to do that type the following at the end of the \#Define functions section:
+Step 1. To convert your collision code into a function we will first add a new function. This code will go at the end of the #Define functions section, and use "isCollision" to return a True or False:
 
 ```python
 def isCollision(t1, t2):
